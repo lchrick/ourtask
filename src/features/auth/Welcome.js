@@ -6,7 +6,7 @@ const Welcome = () => {
 
     const { username, isManager, isAdmin } = useAuth()
 
-    useTitle(`OurTask: It's me, ${username}`)
+    useTitle(`OurTask: ${username}`)
 
     const date = new Date()
     const today = new Intl.DateTimeFormat('en-EU', { dateStyle: 'full', timeStyle: 'long' }).format(date)
