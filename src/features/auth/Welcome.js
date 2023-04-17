@@ -8,14 +8,8 @@ const Welcome = () => {
 
     useTitle(`OurTask: ${username}`)
 
-    const date = new Date()
-    const today = new Intl.DateTimeFormat('en-EU', { dateStyle: 'full', timeStyle: 'long' }).format(date)
-
     const content = (
         <section className="welcome">
-
-            <p>{today}</p>
-
             <h1>Welcome {username}!</h1>
 
             <p><Link to="/dash/notes">View OurTask</Link></p>

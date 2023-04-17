@@ -1,24 +1,34 @@
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons"
 
 const Public = () => {
     const content = (
         <section className="public">
             <header>
-                <h1>Welcome to <span className="nowrap">OurTask!</span></h1>
+                <h1>Welcome to OurTask!</h1>
             </header>
             <main className="public__main">
-                <p>Let's do it.</p>
-                <address className="public__addr">
-                    OurTask<br />
-                    Professorsslingan 47<br />
-                    Stockholm, 11417<br />
-                    <a href="tel:+46730943546">0730943546</a>
-                </address>
-                <br />
-                <p>Owner: LchRick</p>
+                <div className="mainContent">
+                    <p>Let's do it.</p>
+                    <br/>
+                    <div>
+                        <p> Click to start: <FontAwesomeIcon icon={faCircleArrowRight} /> <Link className="linkName" to="/login">Employee Login</Link></p>
+                    </div>
+                    <br/>
+                    <div>
+                        <p>Test Account: username: admin; password: admin</p>
+                    </div>
+                </div>
             </main>
             <footer>
-                <Link to="/login">Employee Login</Link>
+                <address>
+                    OurTask:Professorsslingan 47, Stockholm, 11417
+                    <br/>
+                    <FontAwesomeIcon icon={faPhoneSquareAlt} /><a href="tel:+46730943546">0730943546</a>
+                </address>
+                <p>Owner: Chenhao Li</p>
             </footer>
         </section>
 
