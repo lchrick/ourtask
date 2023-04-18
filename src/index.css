@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* || VARIABLES */
@@ -74,9 +77,6 @@ body {
   background-size: cover;
   background-position: top right;
   background-blend-mode: multiply;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 input,
