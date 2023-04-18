@@ -74,6 +74,9 @@ body {
   background-size: cover;
   background-position: top right;
   background-blend-mode: multiply;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input,
